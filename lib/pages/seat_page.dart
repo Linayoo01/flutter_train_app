@@ -44,7 +44,7 @@ class _SeatPageState extends State<SeatPage> {
     );
   }
 
-  // ❶ 출발/도착 역 + ❸ 좌석 상태 안내
+  // 출발/도착 역 + 좌석 상태 안내
   Widget buildHeader() {
     return Column(
       children: [
@@ -110,14 +110,49 @@ class _SeatPageState extends State<SeatPage> {
     );
   }
 
-  // ❹ 좌석 리스트
-  Widget buildSeatGrid() {
-    return Column(
-      children: List.generate(20, (index) => buildSeatRow(index + 1)),
-    );
-  }
+  // 좌석 리스트 + ABCD 라벨
+Widget buildSeatGrid() {
+  return Column(
+    children: [
+      // ABCD 라벨 헤더 추가
+      Padding(
+  padding: const EdgeInsets.only(bottom: 8.0),
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: const [
+      SizedBox(
+        width: 40,
+        child: Center(child: Text('A', textAlign: TextAlign.center)),
+      ),
+      SizedBox(width: 8),
+      SizedBox(
+        width: 40,
+        child: Center(child: Text('B', textAlign: TextAlign.center)),
+      ),
+      SizedBox(width: 16),
+      SizedBox(width: 30), // 가운데 숫자 공간
+      SizedBox(width: 16),
+      SizedBox(
+        width: 40,
+        child: Center(child: Text('C', textAlign: TextAlign.center)),
+      ),
+      SizedBox(width: 8),
+      SizedBox(
+        width: 40,
+        child: Center(child: Text('D', textAlign: TextAlign.center)),
+      ),
+    ],
+  ),
+),
 
-  // ❺ 좌석 위젯 + 행 번호
+      const SizedBox(height: 4),
+      // 좌석 행 리스트
+      ...List.generate(20, (index) => buildSeatRow(index + 1)),
+    ],
+  );
+}
+
+  // 좌석 위젯 + 행 번호
   Widget buildSeatRow(int rowNumber) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
@@ -168,7 +203,7 @@ class _SeatPageState extends State<SeatPage> {
     );
   }
 
-  // ❻ 예매하기 버튼 및 다이얼로그
+  // 예매하기 버튼 및 다이얼로그
   Widget buildBookButton() {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
