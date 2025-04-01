@@ -71,12 +71,12 @@ lib/
 🌞 Light Mode
 | 홈 화면 | 역 선택 화면 | 좌석 선택 화면 |
 |--------|-------------|----------------|
-| ![image](https://github.com/user-attachments/assets/79e00349-1310-430d-8101-2187aeb9648e) | ![image](https://github.com/user-attachments/assets/f0fcd52d-3a1e-486b-b0ee-8b1fcb44ae3d) | ![image](https://github.com/user-attachments/assets/542ef875-0cd3-47ac-8145-01dc840b6877) |
+| ![image](https://github.com/user-attachments/assets/79e00349-1310-430d-8101-2187aeb9648e) | ![image](https://github.com/user-attachments/assets/2932fc1f-e6c3-42fa-ac27-9895de18ea9e) | ![image](https://github.com/user-attachments/assets/6be79265-a7e5-4f89-b015-4bf065109316) |
 
 🌙 Dark Mode
 | 홈 화면 | 역 선택 화면 | 좌석 선택 화면 |
 |--------|-------------|----------------|
-| ![image](https://github.com/user-attachments/assets/3eed44ff-09cd-4175-8236-92d02140e6bf)|![image](https://github.com/user-attachments/assets/713c7f62-9648-4c58-9487-c3a93be98664) | ![image](https://github.com/user-attachments/assets/282461e2-970f-413b-8a1e-d14b6eff7c4f) |
+| ![image](https://github.com/user-attachments/assets/3eed44ff-09cd-4175-8236-92d02140e6bf)|![image](https://github.com/user-attachments/assets/811f3f19-0ca7-4191-babf-908da3b4b62a) | ![image](https://github.com/user-attachments/assets/0a116cd4-e131-4f22-b3f9-d0b3c141bc89) |
 
 ⚙️ main.dart 내부 테마 설정 code
 ```plaintext
